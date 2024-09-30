@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cadastro_de_clientes.Controlador">
+   <children>
+      <Label layoutX="209.0" layoutY="29.0" text="Cadastro de Clientes">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nome" layoutX="105.0" layoutY="76.0" prefHeight="26.0" prefWidth="333.0" />
+      <Label layoutX="42.0" layoutY="79.0" text="Nome">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="118.0" prefHeight="26.0" prefWidth="38.0" text="CEP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="168.0" text="Rua">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="210.0" text="Cidade">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="256.0" text="Telefone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="168.0" text="Número">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="211.0" text="Estado">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="351.0" layoutY="117.0" mnemonicParsing="false" onAction="#buscar" text="Buscar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="178.0" layoutY="324.0" mnemonicParsing="false" onAction="#limpar" text="Limpar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="342.0" layoutY="324.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="cep" layoutX="105.0" layoutY="117.0" prefHeight="26.0" prefWidth="234.0" promptText="99999-999" />
+      <TextField fx:id="rua" layoutX="106.0" layoutY="165.0" prefHeight="26.0" prefWidth="234.0" />
+      <TextField fx:id="cidade" layoutX="106.0" layoutY="207.0" prefHeight="26.0" prefWidth="234.0" />
+      <TextField fx:id="telefone" layoutX="105.0" layoutY="253.0" prefHeight="26.0" prefWidth="234.0" />
+      <TextField fx:id="numero" layoutX="411.0" layoutY="164.0" />
+      <TextField fx:id="estado" layoutX="412.0" layoutY="208.0" />
+      <Button layoutX="481.0" layoutY="354.0" mnemonicParsing="false" onAction="#listar" text="Listar Clientes">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
